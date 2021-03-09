@@ -1,7 +1,8 @@
 import React from 'react'
 import '../css/Item.css'
 import bulb from '../img/bulb.jpg'
-
+import StarIcon from '@material-ui/icons/Star';
+import StarHalfIcon from '@material-ui/icons/StarHalf';
 
 const Item = () => {
     return (
@@ -16,7 +17,8 @@ const Item = () => {
                 By voice command, make them change color, intensity and turn them on and off.</p>
                 <dl>
                 <dt>Rating</dt>
-                <dd>4.5 <span className="material-icons" id="rating">star</span><span className="material-icons" id="rating">star</span><span className="material-icons" id="rating">star</span><span className="material-icons" id="rating">star</span><span className="material-icons" id="rating">star_half</span></dd>
+                
+                <dd>4.5 <StarIcon /> <StarIcon /> <StarIcon /><StarIcon /> <StarHalfIcon /></dd>
                 </dl>
                 <a href="#" className="hedin">see more</a>
             </header>
