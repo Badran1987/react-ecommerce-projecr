@@ -6,20 +6,26 @@
     grid-column-start: span 3;
 }
 
-@media only screen and (min-width: 2000px) {
+@media only screen and (min-device-width: 1024px) and (max-device-width: 2000px) {
     .results{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 1em;
+    column-gap: 4em;
 
+    }
+    .subheading {
+        grid-column-start: span 3;
     }
 }
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px){
     .results{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr  1fr;
         column-gap: 1em;
     
+        }
+        .subheading {
+            grid-column-start: span 2;
         }
     }
